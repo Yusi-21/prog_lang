@@ -1,39 +1,39 @@
 import 'package:flutter/material.dart';
-import '../models/language.dart';
-import '../widgets/language_item.dart';
+// import '../models/language.dart';
+// import '../widgets/language_item.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final List<Language> languages = [
-      const Language(
-        icon: Icons.code,
-        name: 'Dart',
-        description: 'Язык для Flutter, быстрый и современный.',
-      ),
-        const Language(
-        icon: Icons.android,
-        name: 'Kotlin',
-        description: 'Официальный язык для Android.',
-      ),
-        const Language(
-        icon: Icons.coffee,
-        name: 'Java',
-        description: 'Классика, ООП, 30 лет на рынке.',
-      ),
-        const Language(
-        icon: Icons.pets,
-        name: 'Python',
-        description: 'Популярен для AI, анализа данных и бэкенда.',
-      ),
-        const Language(
-        icon: Icons.settings,
-        name: 'C++',
-        description: 'Мощный язык для систем и игр.',
-      ),
-    ];
+    // final List<Language> languages = [
+    //   const Language(
+    //     icon: Icons.code,
+    //     name: 'Dart',
+    //     description: 'Язык для Flutter, быстрый и современный.',
+    //   ),
+    //     const Language(
+    //     icon: Icons.android,
+    //     name: 'Kotlin',
+    //     description: 'Официальный язык для Android.',
+    //   ),
+    //     const Language(
+    //     icon: Icons.coffee,
+    //     name: 'Java',
+    //     description: 'Классика, ООП, 30 лет на рынке.',
+    //   ),
+    //     const Language(
+    //     icon: Icons.pets,
+    //     name: 'Python',
+    //     description: 'Популярен для AI, анализа данных и бэкенда.',
+    //   ),
+    //     const Language(
+    //     icon: Icons.settings,
+    //     name: 'C++',
+    //     description: 'Мощный язык для систем и игр.',
+    //   ),
+    // ];
 
     return Scaffold(
       appBar: AppBar(
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: Container(
+                    child: SizedBox(
                       height: 180,
                       child: Image.network(
                         'https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png',
