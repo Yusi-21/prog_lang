@@ -60,19 +60,55 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              Expanded(
-                  child: ListView.separated(
-                      itemCount: languages.length,
-                      separatorBuilder: (context, index) => const Divider(thickness: 1),
-                      itemBuilder: (context, index) {
-                        return Padding(
-                            padding: EdgeInsets.symmetric(vertical: 8.0),
-                            child: LanguageItem(language: languages[index]),
-                        );
-                      },
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      height: 180,
+                      child: Image.network(
+                        'https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png',
+                        fit: BoxFit.contain,
+                      ),
+                    ),
                   ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      height: 180,
+                      padding: const EdgeInsets.all(12),
+                      child: const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text('1. Dart', style: TextStyle(fontSize: 16)),
+                          Text('2. Kotlin', style: TextStyle(fontSize: 16)),
+                          Text('3. Java', style: TextStyle(fontSize: 16)),
+                          Text('4. Python', style: TextStyle(fontSize: 16)),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
+              const SizedBox(height: 20),
 
+              // Expanded(
+              //     child: ListView.separated(
+              //         itemCount: languages.length,
+              //         separatorBuilder: (context, index) => const Divider(thickness: 1),
+              //         itemBuilder: (context, index) {
+              //           return Padding(
+              //               padding: EdgeInsets.symmetric(vertical: 8.0),
+              //               child: LanguageItem(language: languages[index]),
+              //           );
+              //         },
+              //     ),
+              // ),
+
+              const Spacer(),
               const Divider(thickness: 2),
               const SizedBox(height: 10),
               const Row(
