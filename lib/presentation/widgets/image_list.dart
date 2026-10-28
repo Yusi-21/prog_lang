@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/language.dart';
+import '../../../models/language.dart';
 
 // for practice 4
 class ImageList extends StatelessWidget {

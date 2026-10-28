@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prog_lang/presentation/widgets/image_list.dart';
-import '../models/language.dart';
+import '../../../models/language.dart';
 import '../widgets/language_item.dart';
 import 'profile_screen.dart';
 

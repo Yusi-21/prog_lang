@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/language.dart';
+import '../../../models/language.dart';
+import '../../theme/theme_toggle_action.dart';  // added for practice 9
 
 // for practice6
 class DetailScreen extends StatelessWidget {
@@ -14,6 +15,7 @@ class DetailScreen extends StatelessWidget {
         title: Text(language.name),
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.black,
+        actions: const [ThemeToggleAction()], // added for practice 9
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {

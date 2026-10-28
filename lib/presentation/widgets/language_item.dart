@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/language.dart';
+import '../../../models/language.dart';
 import '../screens/detail_screen.dart';
 
 // for practice 4 (and for practice 6)
@@ -17,7 +17,7 @@ class LanguageItem extends StatelessWidget {
       ),
       clipBehavior: Clip.antiAlias, // This mode has anti-aliased clipping edges
       child: ListTile(
-        leading: Icon(language.icon, color: Colors.blue),
+        // leading: Icon(language.icon, color: Colors.blue), // closed for practice-8, because icons show not correct
         title: Text(
           language.name,
           style: const TextStyle(
